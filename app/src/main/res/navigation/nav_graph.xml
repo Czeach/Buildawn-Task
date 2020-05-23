@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/employeeDetailsFragment">
+
+    <fragment
+        android:id="@+id/deviceLoginFragment"
+        android:name="com.example.buildawntask.fragments.DeviceLoginFragment"
+        android:label="fragment_device_login"
+        tools:layout="@layout/fragment_device_login" />
+    <fragment
+        android:id="@+id/optionScreenFragment"
+        android:name="com.example.buildawntask.fragments.OptionScreenFragment"
+        android:label="OptionScreenFragment"
+        tools:layout="@layout/fragment_option_screen"/>
+    <fragment
+        android:id="@+id/markAttendanceFragment"
+        android:name="com.example.buildawntask.fragments.MarkAttendanceFragment"
+        android:label="MarkAttendanceFragment"
+        tools:layout="@layout/fragment_mark_attendance"/>
+    <fragment
+        android:id="@+id/registerEmployeeFragment"
+        android:name="com.example.buildawntask.fragments.RegisterEmployeeFragment"
+        android:label="RegisterEmployeeFragment"
+        tools:layout="@layout/fragment_register_employee"/>
+    <fragment
+        android:id="@+id/employeeDetailsFragment"
+        android:name="com.example.buildawntask.fragments.EmployeeDetailsFragment"
+        android:label="fragment_employee_details"
+        tools:layout="@layout/fragment_employee_details" />
+</navigation>
