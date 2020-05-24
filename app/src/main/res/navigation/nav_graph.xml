@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/employeeDetailsFragment">
+    app:startDestination="@id/employeeDataFragment">
 
     <fragment
         android:id="@+id/deviceLoginFragment"
@@ -31,4 +31,9 @@
         android:name="com.example.buildawntask.fragments.EmployeeDetailsFragment"
         android:label="fragment_employee_details"
         tools:layout="@layout/fragment_employee_details" />
+    <fragment
+        android:id="@+id/employeeDataFragment"
+        android:name="com.example.buildawntask.fragments.EmployeeDataFragment"
+        android:label="EmployeeDataFragment"
+        tools:layout="@layout/fragment_employee_data"/>
 </navigation>
