@@ -4,13 +4,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/cameraFragment">
+    app:startDestination="@id/deviceLoginFragment">
 
     <fragment
         android:id="@+id/deviceLoginFragment"
         android:name="com.example.buildawntask.fragments.DeviceLoginFragment"
         android:label="fragment_device_login"
-        tools:layout="@layout/fragment_device_login" />
+        tools:layout="@layout/fragment_device_login" >
+        <action
+            android:id="@+id/action_deviceLoginFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+    </fragment>
     <fragment
         android:id="@+id/optionScreenFragment"
         android:name="com.example.buildawntask.fragments.OptionScreenFragment"
