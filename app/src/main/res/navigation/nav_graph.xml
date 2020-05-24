@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/employeeDataFragment">
+    app:startDestination="@id/cameraFragment">
 
     <fragment
         android:id="@+id/deviceLoginFragment"
@@ -17,23 +17,8 @@
         android:label="OptionScreenFragment"
         tools:layout="@layout/fragment_option_screen"/>
     <fragment
-        android:id="@+id/markAttendanceFragment"
-        android:name="com.example.buildawntask.fragments.MarkAttendanceFragment"
-        android:label="MarkAttendanceFragment"
-        tools:layout="@layout/fragment_mark_attendance"/>
-    <fragment
-        android:id="@+id/registerEmployeeFragment"
-        android:name="com.example.buildawntask.fragments.RegisterEmployeeFragment"
-        android:label="RegisterEmployeeFragment"
-        tools:layout="@layout/fragment_register_employee"/>
-    <fragment
-        android:id="@+id/employeeDetailsFragment"
-        android:name="com.example.buildawntask.fragments.EmployeeDetailsFragment"
-        android:label="fragment_employee_details"
-        tools:layout="@layout/fragment_employee_details" />
-    <fragment
-        android:id="@+id/employeeDataFragment"
-        android:name="com.example.buildawntask.fragments.EmployeeDataFragment"
-        android:label="EmployeeDataFragment"
-        tools:layout="@layout/fragment_employee_data"/>
+        android:id="@+id/cameraFragment"
+        android:name="com.example.buildawntask.fragments.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" />
 </navigation>
