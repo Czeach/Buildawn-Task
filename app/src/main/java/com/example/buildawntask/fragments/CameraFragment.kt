@@ -27,8 +27,8 @@ import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 
 /**
- * A simple [Fragment] subclass.
- */
+* Camera fragment implements the camera operations
+*/
 
 class CameraFragment : Fragment() {
 
@@ -47,21 +47,42 @@ class CameraFragment : Fragment() {
         // Inflate the layout for this fragment
         inflater.inflate(R.layout.fragment_camera, container, false)
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        container = view as ConstraintLayout
+        //initialize the camera preview
+        viewFinder = container.findViewById(R.id.view_finder)
+
+        // Initialize our background executor
+        cameraExecutor = Executors.newSingleThreadExecutor()
+
+        viewFinder.post {
+            // Set up the camera and its use cases
+            startCamera()
+        }
+    }
+
+    /** Initialize CameraX, and prepare to bind the camera use cases  */
     private fun startCamera() {
         val cameraProviderFuture = ProcessCameraProvider.getInstance(requireContext())
         cameraProviderFuture.addListener(Runnable {
+
+            // initialize CameraProvider
             cameraProvider = cameraProviderFuture.get()
 
+            // initialize and build Preview
             preview = Preview.Builder()
                 .build()
 
+            // Select front camera
             val cameraSelector = CameraSelector.Builder().requireLensFacing(CameraSelector.LENS_FACING_FRONT).build()
 
+            // Must unbind all use cases before binding them
             cameraProvider?.unbindAll()
 
             try {
+                // Bind and pass in desired use cases
                 camera = cameraProvider?.bindToLifecycle(this, cameraSelector, preview)
-
+                // Attach the viewfinder's surface provider to preview use case
                 preview?.setSurfaceProvider(viewFinder.createSurfaceProvider(camera?.cameraInfo))
             } catch (e: Exception) {
                 Log.e(TAG, "Use case binding failed", e)
@@ -69,13 +90,4 @@ class CameraFragment : Fragment() {
         }, ContextCompat.getMainExecutor(requireContext()))
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        container = view as ConstraintLayout
-        viewFinder = container.findViewById(R.id.view_finder)
-        cameraExecutor = Executors.newSingleThreadExecutor()
-
-        viewFinder.post {
-            startCamera()
-        }
-    }
 }
