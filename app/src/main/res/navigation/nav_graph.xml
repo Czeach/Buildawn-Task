@@ -11,9 +11,10 @@
         android:name="com.example.buildawntask.fragments.DeviceLoginFragment"
         android:label="fragment_device_login"
         tools:layout="@layout/fragment_device_login" >
+
         <action
-            android:id="@+id/action_deviceLoginFragment_to_cameraFragment"
-            app:destination="@id/cameraFragment" />
+            android:id="@+id/action_deviceLoginFragment_to_permissionsFragment"
+            app:destination="@id/permissionsFragment" />
     </fragment>
     <fragment
         android:id="@+id/optionScreenFragment"
@@ -25,4 +26,12 @@
         android:name="com.example.buildawntask.fragments.CameraFragment"
         android:label="fragment_camera"
         tools:layout="@layout/fragment_camera" />
+    <fragment
+        android:id="@+id/permissionsFragment"
+        android:name="com.example.buildawntask.fragments.PermissionsFragment"
+        android:label="PermissionsFragment" >
+        <action
+            android:id="@+id/action_permissionsFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+    </fragment>
 </navigation>

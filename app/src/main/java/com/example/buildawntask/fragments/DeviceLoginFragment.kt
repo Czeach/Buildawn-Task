@@ -28,7 +28,7 @@ class DeviceLoginFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         login_button.setOnClickListener {
-            it.findNavController().navigate(R.id.action_deviceLoginFragment_to_cameraFragment)
+            it.findNavController().navigate(R.id.action_deviceLoginFragment_to_permissionsFragment)
         }
     }
 }
