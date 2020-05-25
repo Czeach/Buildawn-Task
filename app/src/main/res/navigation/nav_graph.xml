@@ -17,11 +17,6 @@
             app:destination="@id/permissionsFragment" />
     </fragment>
     <fragment
-        android:id="@+id/optionScreenFragment"
-        android:name="com.example.buildawntask.fragments.OptionScreenFragment"
-        android:label="OptionScreenFragment"
-        tools:layout="@layout/fragment_option_screen"/>
-    <fragment
         android:id="@+id/cameraFragment"
         android:name="com.example.buildawntask.fragments.CameraFragment"
         android:label="fragment_camera"
