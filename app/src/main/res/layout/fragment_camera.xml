@@ -40,10 +40,6 @@
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/camera_outline"
-                android:text=""
-                android:textColor="@color/colorDark"
-                android:textSize="18sp"
-                app:fontFamily="@font/lato_light"
                 app:layout_constraintBottom_toTopOf="@+id/cardView3"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -82,10 +78,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
-                        android:text="Name"
-                        android:textColor="@color/colorDark"
-                        android:textSize="18sp"
-                        app:fontFamily="@font/lato_light"
+                        android:text="@string/name_option"
+                        style="@style/fragment_camera_light_text"
                         app:layout_constraintBottom_toBottomOf="@+id/imageView6"
                         app:layout_constraintStart_toEndOf="@+id/imageView6"
                         app:layout_constraintTop_toTopOf="@+id/imageView6" />
@@ -105,9 +99,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Marked"
-                        android:textColor="@color/colorDark"
-                        android:textSize="18sp"
-                        app:fontFamily="@font/lato_light"
+                        style="@style/fragment_camera_light_text"
                         app:layout_constraintBottom_toBottomOf="@+id/imageView7"
                         app:layout_constraintStart_toStartOf="@+id/textView13" />
 
@@ -126,9 +118,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Emp_ID"
-                        android:textColor="@color/colorDark"
-                        android:textSize="18sp"
-                        app:fontFamily="@font/lato_light"
+                        style="@style/fragment_camera_light_text"
                         app:layout_constraintBottom_toBottomOf="@+id/imageView8"
                         app:layout_constraintStart_toStartOf="@+id/textView15" />
 
@@ -147,9 +137,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="WH_ID"
-                        android:textColor="@color/colorDark"
-                        android:textSize="18sp"
-                        app:fontFamily="@font/lato_light"
+                        style="@style/fragment_camera_light_text"
                         app:layout_constraintBottom_toBottomOf="@+id/imageView9"
                         app:layout_constraintStart_toStartOf="@+id/textView16" />
 
@@ -168,9 +156,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Location"
-                        android:textColor="@color/colorDark"
-                        android:textSize="18sp"
-                        app:fontFamily="@font/lato_light"
+                        style="@style/fragment_camera_light_text"
                         app:layout_constraintBottom_toBottomOf="@+id/imageView10"
                         app:layout_constraintStart_toStartOf="@+id/textView17" />
 
@@ -180,9 +166,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="56dp"
                         android:text="Rachel Kumar Green"
-                        android:textColor="@color/colorDark"
-                        android:textSize="18sp"
-                        app:fontFamily="@font/lato"
+                        style="@style/fragment_camera_text"
                         app:layout_constraintBottom_toBottomOf="@+id/textView13"
                         app:layout_constraintStart_toEndOf="@+id/textView13"
                         app:layout_constraintTop_toTopOf="@+id/textView13" />
@@ -192,9 +176,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="On-Time"
-                        android:textColor="@color/colorPrimaryText"
-                        android:textSize="18sp"
-                        app:fontFamily="@font/lato"
+                        style="@style/fragment_camera_text_green"
                         app:layout_constraintBottom_toBottomOf="@+id/textView15"
                         app:layout_constraintStart_toStartOf="@+id/textView22"
                         app:layout_constraintTop_toTopOf="@+id/textView15" />
@@ -204,9 +186,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="EMP007"
-                        android:textColor="@color/colorDark"
-                        android:textSize="18sp"
-                        app:fontFamily="@font/lato"
+                        style="@style/fragment_camera_text"
                         app:layout_constraintBottom_toBottomOf="@+id/textView16"
                         app:layout_constraintStart_toStartOf="@+id/textView23"
                         app:layout_constraintTop_toTopOf="@+id/textView16" />
@@ -216,9 +196,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="WH_MH007"
-                        android:textColor="@color/colorDark"
-                        android:textSize="18sp"
-                        app:fontFamily="@font/lato"
+                        style="@style/fragment_camera_text"
                         app:layout_constraintBottom_toBottomOf="@+id/textView17"
                         app:layout_constraintStart_toStartOf="@+id/textView24"
                         app:layout_constraintTop_toTopOf="@+id/textView17" />
@@ -228,9 +206,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Bhiwandi, Maharasthra"
-                        android:textColor="@color/colorDark"
-                        android:textSize="18sp"
-                        app:fontFamily="@font/lato"
+                        style="@style/fragment_camera_text"
                         app:layout_constraintBottom_toBottomOf="@+id/textView18"
                         app:layout_constraintStart_toStartOf="@+id/textView25"
                         app:layout_constraintTop_toTopOf="@+id/textView18" />
@@ -242,9 +218,7 @@
                         android:layout_marginTop="16dp"
                         android:layout_marginBottom="8dp"
                         android:text="not you ?"
-                        android:textColor="@color/colorLipstick"
-                        android:textSize="18sp"
-                        app:fontFamily="@font/lato"
+                        style="@style/fragment_camera_text_red"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/textView26"
                         app:layout_constraintTop_toBottomOf="@+id/textView26" />

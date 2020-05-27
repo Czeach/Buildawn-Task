@@ -8,4 +8,38 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="fragment_camera_light_text" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">18sp</item>
+        <item name="font">@font/lato_light</item>
+        <item name="android:textColor">@color/colorAccentLight</item>
+    </style>
+
+    <style name="fragment_camera_text" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">18sp</item>
+        <item name="font">@font/lato</item>
+        <item name="android:textColor">@color/colorDark</item>
+    </style>
+
+    <style name="fragment_camera_text_green" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">18sp</item>
+        <item name="font">@font/lato</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+    </style>
+
+    <style name="fragment_camera_text_red" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">18sp</item>
+        <item name="font">@font/lato</item>
+        <item name="android:textColor">@color/colorLipstick</item>
+    </style>
+
+    <style name="select_option_title_text" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">24sp</item>
+        <item name="font">@font/lato</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+    </style>
+
+    <style name="card_properties" parent="CardView">
+        <item name="elevation">10dp</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
 </resources>
